@@ -1,0 +1,30 @@
+#+TITLE: Monzo API interface for Bash
+#+AUTHOR: Tyler Griffiths
+
+* Purpose
+
+This is a simple shell script providing an interface to Monzo.
+Obtain API credentials from [[api.monzo.com]], enter into the
+vars file, and enjoy.
+
+* Usage
+
+Subcommands may be abbreviated.
+
+** =monzo b(al(ance))=
+
+Displays the present current account balance, excluding pots.
+Takes no arguments, returns a result in GBP.
+
+** =monzo t(rans(actions))=
+
+Displays a list of recent transactions, most recent last. Takes
+the starting date as the sole optional argument. This must be less
+than three months before the present date, a limitation imposed by
+Monzo. Where no date is specified, one month before the present 
+date is used. Experimental.
+
+** =monzo f(eed)=
+
+Posts an item to the Monzo feed. Two required arguments: title and
+content. Experimental.

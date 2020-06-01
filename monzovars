@@ -1,0 +1,3 @@
+MZ_UID=""  # Monzo user ID
+MZ_AID=""  # Monzo account ID
+MZ_TKN=""  # Monzo API auth token
